@@ -7,7 +7,7 @@
         </form>
         <div>시도: {{tries.length}}</div>
         <ul>
-            <li v-bind:key="tries" v-for="t_data in tries" >
+            <li :key="t_data.try" v-for="t_data in tries" >
                 <div>{{t_data.try}}</div>
                 <div>{{t_data.result}}</div>
             </li>
